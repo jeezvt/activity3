@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pedraza Resume</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Pedraza Resume">
+        <meta name="keywords" content="Jhun Pedraza, Resume, Web Development">
+        <meta name="author" content="Jhun Pedraza">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+            table, th, tr, td {
+                border-width: 2px;
+                border-color: black;
+                border-style: solid;
+                border-collapse: collapse;
+                padding: 3px;
+            }
+            th {
+                background-color: bisque;
+            }
+            .people {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                column-gap: 30px;
+                margin-left: 50px;
+                margin-right: -10px;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                column-gap: 5px;
+            }
+            .left {
+                background-color: rgb(90, 202, 155);
+                padding: 10px;
+            }
+            .right {
+                padding: 20px;
+            }
+            .title {
+                padding: 10px;
+                margin: -7px;
+                background-color:aquamarine;
+            }
+            li > a[href] {
+                margin-bottom: 20px;
+                margin-right: 30px;
+                padding: 10px;
+                color: navy;
+                border: solid;
+            }
+            li > a[href]:hover {
+                color: blue;
+            }
+            ul > li {
+                list-style: none;
+            }
+            ul.menu li {
+                display: inline;
+            }
+            #references {
+                margin-bottom: -6px;
+                background-color: aquamarine; padding: 10px;
+            }
+            .opinion textarea {
+                width: 70%;
+                padding: 5px;
+                resize: none;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset style="margin: 20px;">
+            <div class="grid-container">
+                <div class="left">
+                    <fieldset>
+                        <h2>Interests</h2>
+                        <hr>
+                        <p>Interest that I am currently engaged to are checked</span> to provide better understanding.</p>
+                        <input type="checkbox" id="Photography" name="interest" value="Photography" checked>
+                        <label for="Photography">Photography</label><br>
+                        <input type="checkbox" id="Dancing" name="interest" value="Dancing">
+                        <label for="Dancing">Dancing</label><br>
+                        <input type="checkbox" id="Cooking" name="interest" value="Cooking" checked>
+                        <label for="Cooking">Cooking</label><br>
+                        <input type="checkbox" id="IT_Audit" name="interest" value="IT_Audit" checked>
+                        <label for="IT_Audit">IT Audit</label><br>
+                        <input type="checkbox" id="Project_Management" name="interest" value="Project_Management" checked>
+                        <label for="Project_Management">Project Management</label><br>
+                        <input type="checkbox" id="Computer_Programming" name="interest" value="Computer_Programming" checked>
+                        <label for="Computer_Programming">Computer Programming</label><br>
+                        <input type="checkbox" id="Videography" name="interest" value="Videography">
+                        <label for="Videography">Videography</label><br>
+                        <input type="checkbox" id="Data_Analysis" name="interest" value="Data_Analysis">
+                        <label for="Data_Analysis">Data Analysis</label><br>
+                        <input type="checkbox" id="Web_Development" name="interest" value="Web_Development" checked>
+                        <label for="Web_Development">Web Development</label><br>
+                    </fieldset>
+                </div>
+                <div class="right">
+                    <h2 class="title">School Experiences</h2>
+                    <hr>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Senior High School</td>
+                                <td>Academic</td>
+                                <td>Business Project Leader</td>
+                            </tr>
+                            <tr>
+                                <td>Academic</td>
+                                <td>Best Research</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5">Junior High School</td>
+                                <td>Academic</td>
+                                <td>Techno Quiz Bee National Medalist</td>
+                            </tr>
+                            <tr>
+                                <td>Sports</td>
+                                <td>Aero Gymnastics Division Medalist</td>
+                            </tr>
+                            <tr>
+                                <td>Academic</td>
+                                <td>Director - Radio Broadcasting</td>
+                            </tr>
+                            <tr>
+                                <td>Academic</td>
+                                <td>Best in Computer (Programming, Animation)</td>
+                            </tr>
+                            <tr>
+                                <td>Academic</td>
+                                <td>Organizational Leader</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Elementary</td>
+                                <td>Academic</td>
+                                <td>Student Body Leader</td>
+                            </tr>
+                            <tr>
+                                <td>Academic</td>
+                                <td>Student Journalist</td>
+                            </tr>
+                            <tr>
+                                <td>Sports</td>
+                                <td>Board Games (Dama, Sci-Dama)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h2 id="references">Character References</h2>
+            <hr>
+           <div class="people">
+            <p><b>Elaisa P. Salva</b><br>+63 935 563 6473<br>elaisasalva@gmail.com</p>
+            <p><b>Mark A. Jolongbayan</b><br>+63 938 245 3829<br>markjolongbayan@gmail.com</p>
+            <p><b>Kathy Ann Basit</b><br>+63 905 824 1903<br>kathybasit@gmail.com</p>
+           </div>
+           <hr>
+           <br>
+           <fieldset class="opinion" style="background-color: antiquewhite;">
+                <form>
+                    <h2>Comments or Suggestions</h2>
+                <Label for="rate">Rate my resume: </Label>
+                <select id="rate" name="rating" required>
+                    <option value="" disabled selected>Select Rating</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Great">Great</option>
+                    <option value="Good">Good</option>
+                    <option value="Bad">Bad</option>
+                    <option value="Need_improvement">Need Improvement</option>
+                </select><br><br>
+                <div class="textdiv">
+                    <label for="comment">Comments or suggestions for my resume:</label><br>
+                    <textarea id="comment" name="comment" required placeholder="Type your comment or suggestions for my resume"></textarea>
+                </div>
+                <input style="margin-top: 10px; margin-bottom: 10px;" type="submit" value="Submit">
+                </form>
+            </fieldset>              
+        </fieldset>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pedraza_Resume2.html">More</a> </li>
+            <li><a href="photography.html">Photographs</a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pedraza Resume</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Pedraza Resume">
+        <meta name="keywords" content="Jhun Pedraza, Resume, Web Development">
+        <meta name="author" content="Jhun Pedraza">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+            #me {
+                padding: 50px;
+                font-size: 60px;
+            }
+            img {
+                height: 200px;
+                width: 200px;
+                border-radius: 40%;
+                padding: 60px;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                margin: 20px;
+                column-gap: 5px;
+            }
+            .left {
+                background-color: rgb(90, 202, 155);
+                padding: 10px;
+            }
+            .right {
+                padding: 20px;
+            }
+            .title {
+                padding: 10px;
+                margin: -7px;
+                background-color:aquamarine;
+            }
+            div > p {
+                text-align: justify;
+            }
+            dl > dd {
+                text-align: justify;
+            }
+            li > a[href] {
+                margin-bottom: 20px;
+                margin-right: 30px;
+                padding: 10px;
+                color: navy;
+                border: solid;
+            }
+            li > a[href]:hover {
+                color: blue;
+            }
+            ul > li {
+                list-style: none;
+            }
+            ul.menu li {
+                display: inline;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset class="grid-container">
+            <div class="left">
+                <img src="picture.jpg" alt="img error">          
+            </div>
+            <div class="right">
+                <h1 id="me">Jhun S. Pedraza </h1>
+            </div>
+            <div class="left">
+                <fieldset>
+                    <h2>Personal Information</h2>
+                    <hr>
+                    <p><b>Adress:</b> <input type="text" name="address" value="Brgy. Alabang, Muntintulpa City" minlength="10" maxlength="50" size="29" required readonly></p>
+                    <p><b>E-mail:</b> <input type="email" name="email" value="jhun.pedraza@tup.edu.ph" minlength="10" maxlength="50" size="30" placeholder="xxx@xxx" required readonly></p>
+                    <p><b>Phone Number:</b> <input type="tel" name="phone" pattern="[0]{1}[9]{1}[0-9]{9}" size="20" value="09079727395" placeholder="09xxxxxxxxx" required readonly></p>
+                </fieldset>
+            </div>
+            <div class="right">
+                <h2 class="title">Professional Objective</h2>
+                <hr>
+                <p>To work on a dynamic technology environment where I can utilize my skills and knowledge to contribute to the organizational efficiency and development while continuously expanding my personal growth and professional expertise.</p>
+            </div>
+            <div class="left">
+                <fieldset>
+                    <h2>Skills</h2>
+                    <hr>
+                    <h4>Technical Skills</h4>
+                    <ul>
+                        <li>Microsoft Office: Word, Excel, PowerPoint</li>
+                        <li>Programming Language: C, C++, Python</li>
+                        <li>Data Analysis</li>
+                        <li>Web Development: HTML, CSS, JavaScript</li>                   
+                        <li>Database Management</li>
+                        <li>Networking</li>
+                    </ul>
+                    <h4>Soft Skills</h4>
+                    <ul>
+                        <li>Project Management</li>
+                        <li>Team Collaboration</li>
+                        <li>Communication Skills</li>
+                        <li>Critical Thinking</li>
+                        <li>Time Management</li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="right">
+                <h2 class="title">Education</h2>
+                <hr>
+                <dl>
+                    <dt><b>Undergraduate</b></dt>
+                    <dd>2022-Present</dd>
+                    <dd>Technological University of the Philippines - Manila</dd>
+                    <dd>Bachelor of Science in Information System</dd>
+                </dl>
+                <dl>
+                    <dt><b>Senior High School</b></dt>
+                    <dd>2020-2022</dd>
+                    <dd>Balayan Senior High School</dd>
+                    <dd>Science, Technology, Engineering, and Mathematics Strand</dd>
+                </dl>
+                <dl>
+                    <dt><b>Junior High School</b></dt>
+                    <dd>2016-2020</dd>
+                    <dd>Core Science Academy, Inc.</dd>
+                </dl>
+                <dl>
+                    <dt><b>Elementary</b></dt>
+                    <dd>2012-2016</dd>
+                    <dd>Doña Asuncion Martinez Memorial Elementary School</dd>
+                </dl>
+            </div>
+            <div class="left">
+                <fieldset>
+                    <h2>Proficiency</h2>
+                    <hr>
+                    <h4>Software</h4>
+                    <ol>
+                        <li>Microsoft Word &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio"></li>
+                        <li>Microsoft Excel &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio"><input type="radio"></li>
+                        <li>Microsoft PowerPoint &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio"></li>
+                    </ol>
+                    <h4>Programming Language</h4>
+                    <ol>
+                        <li>C &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio"></li>
+                        <li>C++ &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio"></li>
+                        <li>Python &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio"><input type="radio"></li>
+                    </ol>
+                    <h4>Web Development</h4>
+                    <ol>
+                        <li>HTML &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio"></li>
+                        <li>CSS &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio"><input type="radio"></li>
+                        <li>JavaScript &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio"><input type="radio"><input type="radio"></li>
+                    </ol>
+                    <h4>Language</h4>
+                    <ol>
+                        <li>Filipino &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio" checked></li>
+                        <li>English &nbsp; <input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio" checked><input type="radio"></li>
+                    </ol>
+                </fieldset>
+            </div>
+            <div class="right">
+                <h2 class="title">Projects</h2>
+                <hr>
+                <dl>
+                    <dt><b>Hotel Reservation using C++</b></dt>
+                    <dd>Designed and coded a simple hotel reservation program using C++ programming language in 1st year college with some team members.</dd>
+                </dl>
+                <br>
+                <dl>
+                    <dt><b>ATM Machine using C++</b></dt>
+                    <dd>Created and coded a simple ATM machine program using C++ programming language in 2nd year college with a partner.</dd>
+                </dl>
+                <br>
+                <dl>
+                    <dt><b>Database Management System using FoxPro</b></dt>
+                    <dd>Created a database management system for a simple school using foxpro in 2nd year college with some team members.</dd>
+                </dl>
+                <br>
+                <dl>
+                    <dt><b>Project Management for a Company</b></dt>
+                    <dd>Currently working on a project proposal for a company with some team member.</dd>
+                </dl>
+            </div>
+        </fieldset>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pedraza_Resume2.html">More</a> </li>
+            <li><a href="photography.html">Photographs</a></li>
+        </ul>
+    </body>
+</html>
